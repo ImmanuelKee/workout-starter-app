@@ -1,5 +1,7 @@
 import { createContext, useReducer } from 'react'
 
+require('dotenv').config();
+
 export const WorkoutsContext = createContext()
 
 export const workoutsReducer = (state, action) => {
