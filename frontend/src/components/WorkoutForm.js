@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 
+const express = require('express');
 const cors = require('cors');
-const app = express();
 
+const app = express();
 app.use(cors());
 
 const WorkoutForm = () => {

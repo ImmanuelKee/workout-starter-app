@@ -5,9 +5,10 @@ import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import WorkoutDetails from "../components/WorkoutDetails"
 import WorkoutForm from "../components/WorkoutForm"
 
+const express = require('express');
 const cors = require('cors');
-const app = express();
 
+const app = express();
 app.use(cors());
 
 const Home = () => {
