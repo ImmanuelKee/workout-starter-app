@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 
-require('dotenv').config();
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
 
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext()

@@ -5,7 +5,10 @@ import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import WorkoutDetails from "../components/WorkoutDetails"
 import WorkoutForm from "../components/WorkoutForm"
 
-require('dotenv').config();
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
 
 const Home = () => {
   const { workouts, dispatch } = useWorkoutsContext()
